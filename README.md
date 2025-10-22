@@ -9,7 +9,6 @@ public class training {
         analyzeSalaries(salaries);
         printNamesAndSalaries(names, salaries);
     }
-    
     public static void fillSalaries(double[]x, double y){
         Scanner in = new Scanner(System.in);
         for(int  i = 0; i < x.length; i++){
@@ -19,7 +18,6 @@ public class training {
         }
         return;
     } 
-    
     public static void analyzeSalaries(double[]x){
         double height = 0;
         double lowest = 0;
@@ -37,7 +35,6 @@ public class training {
         }
         System.out.printf("Highest salary: %f %nLowest Salary: %f %nNumber of Salary above 5000: %d",height,lowest,count);
     } 
-    
     public static void printNamesAndSalaries(String[]x, double[]y){
         for( int i = 0; i < x.length; i++){
             System.out.println("Name: " + x[i] + "Salary: " + y[i]);
