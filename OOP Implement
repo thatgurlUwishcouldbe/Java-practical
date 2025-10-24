@@ -1,6 +1,6 @@
 package peep;
 
-public class coffee {
+class coffee {
     private final  String type;
     private final String size;
     private double price;
@@ -16,9 +16,7 @@ public class coffee {
     }
 }
 
-package peep;
-
-public class dessert {
+class dessert {
     private final String name;
     private double price;
 
@@ -32,9 +30,7 @@ public class dessert {
     }
 }
 
-package peep;
-
-public class specialtyCoffee extends coffee{
+class specialtyCoffee extends coffee{
     private boolean extraShot;    
     private final String milkType;
 
