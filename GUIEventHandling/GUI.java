@@ -53,8 +53,13 @@ public class GUI extends JFrame implements ActionListener{
             String X = textF.getText();
             double x = Double.valueOf(X);
             
-            double res = (x*(9/5))+32;
-            textF2.setText(res +"");
+            try {
+                double res = (x * 9.0 / 5) + 32;
+                textF2.setText(res + "");
+            } catch (NumberFormatException e) {
+                textF2.setText("Invalid input");
+            }
+
         }else{
             textF.setText("");
             textF2.setText("");
